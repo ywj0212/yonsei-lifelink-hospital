@@ -1,0 +1,52 @@
+.emr_pati_stack {
+  position: relative;
+  right: 0px;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+}
+.emr_pati_stack_frame_top {
+  display: flex;
+  width: 450px;
+  flex-direction: row;
+}
+.frame_timeline {
+  width: 60px;
+  height: 34px;
+  background-color: var(--color-silver-100);
+}
+.frame_nor_emi_pati,
+.frame_spe_emi_pati {
+  width: 195px;
+  height: 34px;
+  background-color: var(--color-gainsboro);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 18px;
+  font-weight: 600;
+}
+.eps_timeline {
+  display: flex;
+  flex-direction: row;
+  min-height: 125px;
+}
+.eps_timeline_title {
+  background-color: var(--color-gainsboro);
+  width: 60px;
+  display: flex;
+  line-height: 18px;
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+}
+.eps_normal,
+.eps_special {
+  width: 195px;
+  border: 0.5px solid var(--color-gainsboro);
+  background-color: var(--color-whitesmoke-100);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10px;
+}

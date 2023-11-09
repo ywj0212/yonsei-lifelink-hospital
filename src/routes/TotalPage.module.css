@@ -1,0 +1,206 @@
+.totalpage {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-xs);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}
+.topbar {
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--color-dimgray);
+  padding-right: 20px;
+  background-color: var(--color-white);
+  height: 87px;
+}
+.topbar_navi {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 25px 0px;
+}
+.wrapper {
+  border-radius: var(--br-3xs);
+  background-color: var(--color-lightpink);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-3xs);
+  font-size: var(--font-size-sm);
+  font-family: var(--font-roboto);
+  position: absolute;
+  right: 250px;
+  top: 27px;
+}
+.logo_icon {
+  width: 160px;
+  height: 45px;
+  object-fit: cover;
+  margin-left: 20px;
+}
+.topbar_total,
+.topbar_hospital,
+.topbar_doctor {
+  font-weight: 600;
+  font-size: var(--font-size-sm);
+  font-family: var(--font-roboto);
+  color: var(--color-black);
+}
+.topbar_hospital,
+.topbar_doctor {
+  text-decoration: underline solid #ffffff;
+}
+.topbar_hospital {
+  position: absolute;
+  right: 140px;
+  top: 37.5px;
+}
+.topbar_doctor {
+  position: absolute;
+  right: 50px;
+  top: 37.5px;
+}
+.body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 87px;
+}
+.total_current_state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(100% - 450px);
+  overflow-x: auto;
+  padding: 0 50px;
+}
+.hospital_name {
+  margin-top: 150px;
+  margin-bottom: 50px;
+  font-size: 18px;
+  text-align: center;
+  width: 700px;
+  overflow-x: auto;
+}
+.total_current_state_frame {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.total_current_emrBed,
+.total_current_surgery,
+.total_current_hospBed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: var(--br-33xl);
+  background-color: var(--color-whitesmoke-100);
+  width: 180px;
+  height: 250px;
+  margin: 0px 20px;
+}
+.total_current_emrBed_icon,
+.total_current_surgery_icon,
+.total_current_hospBed_icon {
+  width: 39px;
+  height: 39px;
+  overflow: hidden;
+  position: relative;
+  top: 30px;
+}
+.total_current_emrBed_title,
+.total_current_surgery_title,
+.total_current_hospBed_title {
+  font-weight: 600;
+  display: inline-block;
+  position: relative;
+  top: 50px;
+}
+.total_current_emrBed_num,
+.total_current_surgery_num,
+.total_current_hospBed_num {
+  font-weight: 600;
+  display: inline-block;
+  font-size: var(--font-size-80xl);
+  position: relative;
+  top: 50px;
+}
+.total_current_emrBed_num {
+  color: var(--color-darkorange);
+}
+.total_current_hospBed_num {
+  color: var(--color-limegreen-100);
+}
+.total_current_surgery_num {
+  color: var(--color-pink);
+}
+.notification {
+  color: var(--color-dimgray);
+  margin-top: 25px;
+  position: relative;
+  left: 217px;
+}
+.emr_pati_stack {
+  position: relative;
+  right: 0px;
+  width: 450px;
+}
+.emr_pati_stack_frame {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.emr_pati_stack_frame_top {
+  display: flex;
+  width: 450px;
+  flex-direction: row;
+}
+.frame_timeline {
+  width: 60px;
+  height: 34px;
+  background-color: var(--color-silver-100);
+}
+.frame_nor_emi_pati,
+.frame_spe_emi_pati {
+  width: 195px;
+  height: 34px;
+  background-color: var(--color-gainsboro);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 18px;
+  font-weight: 600;
+}
+.emr_pati_stack_frame_bottom {
+  height: 800px;
+  background-color: var(--color-whitesmoke-100);
+}
+.eps_timeline {
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+}
+.eps_timeline div:first-child {
+  background-color: var(--color-gainsboro);
+  width: 60px;
+  display: flex;
+  line-height: 18px;
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+}
+.eps_timeline div:nth-child(2),
+.eps_timeline div:nth-child(3) {
+  width: 195px;
+  border: 0.5px solid var(--color-gainsboro);
+}

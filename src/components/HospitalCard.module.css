@@ -1,0 +1,152 @@
+.hospital_list_card {
+  height: 169px;
+  border-radius: var(--br-xl);
+  background-color: var(--color-whitesmoke-100);
+  margin-bottom: 30px;
+  width: 700px;
+}
+.hospital_list_card_top {
+  height: 85px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hospital_list_card_top_title {
+  display: flex;
+  flex-direction: row;
+}
+.hospital_list_card_top_title_name {
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  color: var(--color-black);
+  padding-left: 30px;
+  padding-right: 28px;
+}
+.hospital_list_card_top_title_type {
+  font-size: var(--font-size-xs);
+  font-weight: 500;
+  color: var(--color-dimgray);
+  position: relative;
+  bottom: -6px;
+}
+.hospital_list_card_top_icons {
+  display: flex;
+  flex-direction: row;
+}
+.hospital_list_card_top_icons_phone,
+.hospital_list_card_top_icons_map {
+  border-radius: 50%;
+  color: white;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  position: relative;
+  top: -4px;
+}
+.hospital_list_card_top_icons_phone {
+  background-color: var(--color-limegreen-100);
+}
+.hospital_list_card_top_icons_map {
+  background-color: var(--color-khaki);
+}
+.hospital_list_card_mid,
+.hospital_list_card_bottom {
+  display: flex;
+  flex-direction: row;
+  height: 23px;
+}
+.hospital_list_card_mid_density,
+.hospital_list_card_bottom_emrgBed {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.hospital_list_card_mid_density_title,
+.hospital_list_card_mid_hospBed_title,
+.hospital_list_card_bottom_emrgBed_title,
+.hospital_list_card_bottom_transPati_title {
+  font-weight: 600;
+  color: var(--color-dimgray-200);
+  font-size: var(--font-size-sm);
+}
+.hospital_list_card_mid_density_title,
+.hospital_list_card_bottom_emrgBed_title {
+  padding-left: 30px;
+}
+.hospital_list_card_mid_density_blocks {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+}
+.hospital_list_card_mid_density_blocks_normal {
+  background-color: var(--color-silver-200);
+  color: var(--color-dimgray);
+}
+.hospital_list_card_mid_density_blocks_red {
+  background-color: var(--color-lightpink);
+  color: var(--color-red-200);
+}
+.hospital_list_card_mid_density_blocks_org {
+  background-color: #ffcd9f;
+  color: #ff7a00;
+}
+.hospital_list_card_mid_density_blocks_yel {
+  background-color: #fff2af;
+  color: #fed600;
+}
+.hospital_list_card_mid_density_blocks_gre {
+  background-color: #d0ffba;
+  color: #2eb200;
+}
+.hospital_list_card_mid_density_blocks_red,
+.hospital_list_card_mid_density_blocks_org,
+.hospital_list_card_mid_density_blocks_yel,
+.hospital_list_card_mid_density_blocks_gre,
+.hospital_list_card_mid_density_blocks_normal {
+  width: 38px;
+  height: 22px;
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-right: 6px;
+}
+.hospital_list_card_mid_hospBed,
+.hospital_list_card_bottom_emrgBed,
+.hospital_list_card_bottom_transPati {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.hospital_list_card_mid_hospBed_number,
+.hospital_list_card_bottom_emrgBed_number,
+.hospital_list_card_bottom_transPati_number {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 15px;
+}
+.hospital_list_card_bottom_emrgBed_number {
+  margin-left: 20px;
+}
+.hospital_list_card_bottom_transPati_number {
+  margin-left: 13px;
+}
+.hospital_list_card_mid_hospBed_number,
+.hospital_list_card_bottom_emrgBed_number,
+.hospital_list_card_bottom_transPati_number {
+  font-size: 15px;
+  font-weight: 500;
+}
+.hospital_list_card_mid_hospBed_number_current,
+.hospital_list_card_bottom_emrgBed_number_current,
+.hospital_list_card_bottom_transPati_number_current {
+  color: var(--color-red-200);
+}
+.hospital_list_card_bottom {
+  margin-top: 15px;
+}

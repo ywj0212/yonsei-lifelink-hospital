@@ -1,0 +1,162 @@
+.component22Child {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-40xl);
+  background-color: var(--color-whitesmoke);
+}
+.vectorIcon,
+.vectorIcon1 {
+  position: absolute;
+  height: 47.03%;
+  width: 45.43%;
+  top: 20.27%;
+  right: 30%;
+  bottom: 32.7%;
+  left: 24.57%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.vectorIcon1 {
+  width: 5.43%;
+  right: 24.57%;
+  left: 70%;
+}
+.vectorIcon2,
+.vectorIcon3,
+.vectorIcon4,
+.vectorIcon5,
+.vectorIcon6,
+.vectorIcon7 {
+  position: absolute;
+  height: 7.84%;
+  width: 8.29%;
+  top: 24.86%;
+  right: 62.86%;
+  bottom: 67.3%;
+  left: 28.86%;
+  border-radius: var(--br-8xs);
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.vectorIcon3,
+.vectorIcon4,
+.vectorIcon5,
+.vectorIcon6,
+.vectorIcon7 {
+  right: 48.29%;
+  left: 43.43%;
+}
+.vectorIcon4,
+.vectorIcon5,
+.vectorIcon6,
+.vectorIcon7 {
+  right: 33.71%;
+  left: 58%;
+}
+.vectorIcon5,
+.vectorIcon6,
+.vectorIcon7 {
+  height: 7.57%;
+  width: 8%;
+  top: 38.92%;
+  right: 63.14%;
+  bottom: 53.51%;
+  left: 28.86%;
+}
+.vectorIcon6,
+.vectorIcon7 {
+  right: 48.57%;
+  left: 43.43%;
+}
+.vectorIcon7 {
+  right: 34%;
+  left: 58%;
+}
+.vectorIcon10,
+.vectorIcon11,
+.vectorIcon12,
+.vectorIcon13,
+.vectorIcon8,
+.vectorIcon9 {
+  position: absolute;
+  height: 14.86%;
+  width: 5.71%;
+  top: 52.43%;
+  right: 54%;
+  bottom: 32.7%;
+  left: 40.29%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.vectorIcon10,
+.vectorIcon11,
+.vectorIcon12,
+.vectorIcon13,
+.vectorIcon9 {
+  width: 6%;
+  right: 45.71%;
+  left: 48.29%;
+}
+.vectorIcon10,
+.vectorIcon11,
+.vectorIcon12,
+.vectorIcon13 {
+  height: 11.89%;
+  width: 12.57%;
+  top: 8.38%;
+  bottom: 79.73%;
+  left: 41.71%;
+}
+.vectorIcon11,
+.vectorIcon12,
+.vectorIcon13 {
+  width: 2.29%;
+  right: 43.43%;
+  left: 54.29%;
+}
+.vectorIcon12,
+.vectorIcon13 {
+  height: 9.73%;
+  width: 3.14%;
+  top: 9.46%;
+  right: 50.57%;
+  bottom: 80.81%;
+  left: 46.29%;
+  border-radius: var(--br-10xs);
+}
+.vectorIcon13 {
+  height: 2.97%;
+  width: 10.29%;
+  top: 12.97%;
+  right: 46.86%;
+  bottom: 84.05%;
+  left: 42.86%;
+}
+.div {
+  position: absolute;
+  height: 8.38%;
+  width: 47.71%;
+  top: 79.73%;
+  left: 24.57%;
+  font-weight: 600;
+  display: inline-block;
+}
+.component22 {
+  position: absolute;
+  top: calc(50% - 43px);
+  left: calc(50% - 154px);
+  width: 309px;
+  height: 326px;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}

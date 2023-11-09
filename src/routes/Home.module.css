@@ -1,0 +1,168 @@
+.homePage {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}
+.home_Compo_Child {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-40xl);
+  background-color: var(--color-whitesmoke);
+}
+.total_Compo_Item {
+  position: absolute;
+  top: calc(50% - 106px);
+  left: calc(50% - 79px);
+  width: 158px;
+  height: 143px;
+}
+.total_Compo_Text {
+  position: absolute;
+  top: calc(50% + 66px);
+  left: calc(50% - 46px);
+  font-weight: 600;
+}
+.move_totalPage {
+  position: absolute;
+  top: calc(50% - 68px);
+  left: calc(50% - 458px);
+  width: 252px;
+  height: 270px;
+}
+.hospital_Compo_Item {
+  position: absolute;
+  top: calc(50% - 113px);
+  left: calc(50% - 57px);
+  width: 118.9px;
+  height: 146px;
+}
+.hospital_Compo_Text {
+  position: absolute;
+  top: calc(50% + 65px);
+  left: calc(50% - 64px);
+  font-weight: 600;
+}
+.move_hospitalPage {
+  position: absolute;
+  top: calc(50% - 66px);
+  left: calc(50% - 126px);
+  width: 252px;
+  height: 268px;
+}
+.doctor_Compo_Item {
+  position: absolute;
+  top: calc(50% - 95.5px);
+  left: calc(50% - 53.5px);
+  width: 105.4px;
+  height: 129.2px;
+}
+.doctor_Compo_Text {
+  position: absolute;
+  top: calc(50% + 65px);
+  left: calc(50% - 49px);
+  font-weight: 600;
+}
+.move_doctorPage {
+  position: absolute;
+  top: calc(50% - 66px);
+  left: calc(50% + 206px);
+  width: 252px;
+  height: 268px;
+}
+.lifeLink {
+  position: absolute;
+  height: 80.11%;
+  width: 65.21%;
+  top: 7.54%;
+  left: 30.36%;
+  display: inline-block;
+}
+.vectorIcon,
+.vectorIcon1 {
+  position: absolute;
+  overflow: hidden;
+}
+.vectorIcon {
+  height: 51.42%;
+  width: 12.43%;
+  top: 12.08%;
+  right: 80.65%;
+  bottom: 36.5%;
+  left: 6.92%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.vectorIcon1 {
+  height: 54.97%;
+  width: 9.48%;
+  top: 14.21%;
+  right: 72.64%;
+  bottom: 30.82%;
+  left: 17.88%;
+  opacity: 0.94;
+}
+.vectorIcon1,
+.vectorIcon2,
+.vectorIcon3 {
+  max-width: 100%;
+  max-height: 100%;
+}
+.vectorIcon2 {
+  position: absolute;
+  height: 26.17%;
+  width: 17.96%;
+  top: 56.61%;
+  right: 74.38%;
+  bottom: 17.21%;
+  left: 7.65%;
+  overflow: hidden;
+}
+.vectorIcon3 {
+  height: 29.84%;
+  width: 3.31%;
+  top: 33.39%;
+  right: 81.19%;
+  bottom: 36.78%;
+  left: 15.5%;
+}
+.div_logo,
+.vectorIcon3,
+.vectorIcon4 {
+  position: absolute;
+  overflow: hidden;
+}
+.vectorIcon4 {
+  height: 11.15%;
+  width: 8.83%;
+  top: 42.4%;
+  right: 78.44%;
+  bottom: 46.45%;
+  left: 12.74%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.div_logo {
+  top: calc(50% - 304px);
+  left: calc(50% - 323px);
+  width: 614px;
+  height: 183px;
+  font-size: 96px;
+  color: #e84b45;
+  font-family: var(--font-baloo-bhaijaan);
+}
+.total_Compo_Text,
+.doctor_Compo_Text,
+.hospital_Compo_Text {
+  color: var(--color-black);
+}

@@ -1,0 +1,58 @@
+.list_card {
+  border-radius: var(--br-xl);
+  background-color: var(--color-whitesmoke);
+  width: 700px;
+  height: 73px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.list_card_head {
+  display: flex;
+  width: 420px;
+  align-items: center;
+  font-size: var(--font-size-base);
+}
+.list_card_name {
+  font-weight: 600;
+  padding-left: 20px;
+}
+.list_card_department {
+  height: 10px;
+  color: var(--color-dimgray);
+  font-weight: 500;
+  font-size: var(--font-size-xs);
+  display: inline-block;
+}
+.list_card_isClinic_true {
+  color: var(--color-limegreen-100);
+  padding-left: 10px;
+  font-weight: 600;
+  font-size: var(--font-size-sm);
+  height: 15px;
+}
+.list_card_isClinic_false {
+  color: var(--color-red);
+  padding-left: 10px;
+  font-weight: 600;
+  font-size: var(--font-size-sm);
+  height: 15px;
+}
+.list_card_name,
+.list_card_depardment,
+.list_card_isClinic {
+  margin: 0px 10px;
+}
+.list_card_icon {
+  border-radius: 50%;
+  background-color: var(--color-limegreen-100);
+  color: white;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}

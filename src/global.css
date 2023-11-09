@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan:wght@400&display=swap");
+body {
+  margin: 0;
+  line-height: normal;
+}
+:root {
+  /* fonts */
+  --font-baloo-bhaijaan: "Baloo Bhaijaan";
+  --font-roboto: Roboto;
+  --font-inter: Inter;
+
+  /* font sizes */
+  --font-size-xs: 12px;
+  --font-size-2xs-6: 10.6px;
+  --font-size-3xs-1: 9.1px;
+  --font-size-base-2: 15.2px;
+  --font-size-91xl: 110px;
+  --font-size-80xl: 96px;
+  --font-size-xl: 20px;
+  --font-size-base: 16px;
+  --font-size-sm: 14px;
+  --font-size-5xs: 8px;
+  --font-size-3xs: 10px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-black: #000;
+  --color-whitesmoke: #f1f1f1;
+  --color-whitesmoke-100: #f0f0f0;
+  --color-whitesmoke-200: #f0f0f0;
+  --color-gainsboro: #d9d9d9;
+  --color-darkslateblue: #1c3472;
+  --color-dimgray: #747474;
+  --color-dimgray-100: #505050;
+  --color-gold: #ffcf25;
+  --color-lightpink: #ffb3b3;
+  --color-red: #ff0202;
+  --color-red-100: #e60012;
+  --color-red-200: #e60012;
+  --color-pink: #ff4c4c;
+  --color-silver-100: #c2c2c2;
+  --color-silver-200: #bfbfbf;
+  --color-limegreen-100: #2eb300;
+  --color-darkorange: #ff7a00;
+  --color-royalblue: #357aff;
+  --color-khaki: #ffe976;
+
+  /* Paddings */
+  --padding-11xs-5: 1.5px;
+  --padding-9xs-8: 3.8px;
+  --padding-3xs: 10px;
+  --padding-11xs: 2px;
+  --padding-8xs: 5px;
+
+  /* Border radiuses */
+  --br-5xs: 8px;
+  --br-40xl: 59px;
+  --br-3xs: 10px;
+  --br-xl: 20px;
+  --br-10xs: 3px;
+  --br-8xs: 5px;
+  --br-11xs: 2px;
+  --br-33xl: 40px;
+}
