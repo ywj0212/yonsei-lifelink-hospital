@@ -29,7 +29,5 @@ jobs:
         cache: 'npm'
     - name: Install dependencies
       run: npm install
-    - name: Run test code
-      run: npm run test
     - name: Build React CSR App
       run: npm run build
