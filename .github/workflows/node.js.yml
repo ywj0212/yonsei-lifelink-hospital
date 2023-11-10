@@ -20,8 +20,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Pwd
-      run: pwd
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
       with:
@@ -31,3 +29,5 @@ jobs:
       run: npm install
     - name: Build React CSR App
       run: npm run build
+    - name: Transfer file to apache static folder
+      run: mv ./build/* /data/www/mirix.kr/lifelink/web/
