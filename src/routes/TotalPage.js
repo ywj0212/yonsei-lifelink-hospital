@@ -9,25 +9,18 @@ const TotalPage = () => {
   const [hospBed, setHospBed] = useState(0);
   const [congestion, setCongestion] = useState([]);
   const [hospitalName, setHospialName] = useState("세브란스 권역응급센터");
-  const getStylesBasedOnValue = (value) => {
+  const getClassNameBasedOnValue = (value) => {
     if (value === 0) {
-      return {
-        color: "var(--color-limegreen-100)",
-      };
+      return style1.colorLimegreen; // Replace with your actual class name
     } else if (value === 1) {
-      return {
-        color: "var(--color-darkorange",
-      };
-    } else if (value === 3) {
-      return {
-        color: "var(--color-pink",
-      };
+      return style1.colorDarkorange; // Replace with your actual class name
+    } else if (value === 2) {
+      return style1.colorPink; // Replace with your actual class name
     } else {
-      return {
-        color: "black",
-      };
+      return style1.colorBlack; // Replace with your actual class name
     }
   };
+
   useEffect(() => {
     const requestOptions = {
       method: "GET",
@@ -37,13 +30,13 @@ const TotalPage = () => {
     fetch("https://lifelink-api.mirix.kr/web/myinfo/0/", requestOptions)
       .then((response) => response.json())
       .then((result) => {
-        setSurgeryRoom(result.opBedRemaing);
+        setSurgeryRoom(result.opBedRemaining);
         setEmrBed(result.emBedRemaining);
         setHospBed(result.icuBedRemaining);
         setCongestion([
-          result.emBedCongestion,
-          result.icuBedCongesiton,
-          result.opBedCongestion,
+          parseInt(result.emBedCongestion),
+          parseInt(result.icuBedCongestion),
+          parseInt(result.opBedCongestion),
         ]);
       })
       .catch((error) => console.log("error".error));
@@ -77,9 +70,9 @@ const TotalPage = () => {
               />
               <div className={style1.total_current_surgery_title}>수술실</div>
               <div
-                className={`${style1.total_current_num} ${getStylesBasedOnValue(
-                  congestion[2]
-                )}`}
+                className={`${
+                  style1.total_current_num
+                } ${getClassNameBasedOnValue(congestion[2])}`}
               >
                 {surgeryRoom}
               </div>
@@ -94,9 +87,9 @@ const TotalPage = () => {
                 응급실 병상
               </div>
               <div
-                className={`${style1.total_current_num} ${getStylesBasedOnValue(
-                  congestion[0]
-                )}`}
+                className={`${
+                  style1.total_current_num
+                } ${getClassNameBasedOnValue(congestion[0])}`}
               >
                 {emrBed}
               </div>
@@ -111,9 +104,9 @@ const TotalPage = () => {
                 입원실 병상
               </div>
               <div
-                className={`${style1.total_current_num} ${getStylesBasedOnValue(
-                  congestion[1]
-                )}`}
+                className={`${
+                  style1.total_current_num
+                } ${getClassNameBasedOnValue(congestion[1])}`}
               >
                 {hospBed}
               </div>

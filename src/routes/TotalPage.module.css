@@ -139,3 +139,15 @@
   position: relative;
   left: 217px;
 }
+.colorLimegreen {
+  color: var(--color-limegreen-100);
+}
+.colorDarkorange {
+  color: var(--color-darkorange);
+}
+.colorPink {
+  color: var(--color-pink);
+}
+.colorBlack {
+  color: var(--color-black);
+}
