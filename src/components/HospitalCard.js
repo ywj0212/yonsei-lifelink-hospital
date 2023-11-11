@@ -39,7 +39,7 @@ export default function HospitalCard({
           <div className={styles.hospital_list_card_mid_density_blocks}>
             <div
               className={`${
-                density == 4
+                density == 3
                   ? styles.hospital_list_card_mid_density_blocks_red
                   : styles.hospital_list_card_mid_density_blocks_normal
               }`}
@@ -48,7 +48,7 @@ export default function HospitalCard({
             </div>
             <div
               className={`${
-                density == 3
+                density == 2
                   ? styles.hospital_list_card_mid_density_blocks_org
                   : styles.hospital_list_card_mid_density_blocks_normal
               }`}
@@ -57,7 +57,7 @@ export default function HospitalCard({
             </div>
             <div
               className={`${
-                density == 2
+                density == 1
                   ? styles.hospital_list_card_mid_density_blocks_yel
                   : styles.hospital_list_card_mid_density_blocks_normal
               }`}
@@ -66,7 +66,7 @@ export default function HospitalCard({
             </div>
             <div
               className={`${
-                density == 1
+                density == 0
                   ? styles.hospital_list_card_mid_density_blocks_gre
                   : styles.hospital_list_card_mid_density_blocks_normal
               }`}

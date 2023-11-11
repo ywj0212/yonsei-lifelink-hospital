@@ -3,11 +3,24 @@ import style1 from "./Hospital.module.css";
 import HospitalCard from "../components/HospitalCard.js";
 import EmrgPatientStack from "../components/EmrgPatientStack";
 import { useState } from "react";
+import { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
 const HospitalPage = () => {
   const [name, setName] = useState("");
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    const requestOptions = {
+      method: "GET",
+      redirect: "follow",
+    };
+
+    fetch("https://lifelink-api.mirix.kr/web/myinfo/0/", requestOptions)
+      .then((response) => response.json())
+      .then((result) => console.log(result))
+      .catch((error) => console.log("error".error));
+  }, []);
 
   const onNameChange = (event) => {
     console.log(event.target.value);
@@ -41,9 +54,6 @@ const HospitalPage = () => {
               emrgBed_total={60}
               trans_pati={4}
             />
-            <HospitalCard hosp_name={"채빈 병원"} density={3} />
-            <HospitalCard hosp_name={"킹왕짱 수혁병원"} density={2} />
-            <HospitalCard hosp_name={"제레널 우진병원"} density={1} />
           </div>
           <div className={style1.hospital_list_search_input}>
             <div className={style1.hospital_list_search_inputgroup}>

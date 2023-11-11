@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import style1 from "./TotalPage.module.css";
 import { useState } from "react";
-
 import EmrgPatientStack from "../components/EmrgPatientStack";
 
 const TotalPage = () => {
