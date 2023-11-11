@@ -1,0 +1,93 @@
+{
+  "doctor1": [
+    {
+      "name": "전수혁",
+      "department": "이비인후과",
+      "isclinic": true
+    }
+  ],
+  "doctor2": [
+    {
+      "name": "유우진",
+      "department": "이비인후과",
+      "isclinic": true
+    }
+  ],
+  "doctor3": [
+    {
+      "name": "박채빈",
+      "department": "이비인후과",
+      "isclinic": false
+    }
+  ],
+  "doctor4": [
+    {
+      "name": "김민형",
+      "department": "이비인후과",
+      "isclinic": false
+    }
+  ],
+  "doctor5": [
+    {
+      "name": "홍길동",
+      "department": "신경외과",
+      "isclinic": true
+    }
+  ],
+  "doctor6": [
+    {
+      "name": "전우치",
+      "department": "신경외과",
+      "isclinic": false
+    }
+  ],
+  "doctor7": [
+    {
+      "name": "윤동주",
+      "department": "정형외과",
+      "isclinic": true
+    }
+  ],
+  "doctor8": [
+    {
+      "name": "안중근",
+      "department": "정형외과",
+      "isclinic": true
+    }
+  ],
+  "doctor9": [
+    {
+      "name": "안창호",
+      "department": "정형외과",
+      "isclinic": false
+    }
+  ],
+  "doctor10": [
+    {
+      "name": "정약용",
+      "department": "흉부외과",
+      "isclinic": true
+    }
+  ],
+  "doctor11": [
+    {
+      "name": "전봉준",
+      "department": "흉부외과",
+      "isclinic": false
+    }
+  ],
+  "doctor12": [
+    {
+      "name": "강감찬",
+      "department": "외상외과",
+      "isclinic": true
+    }
+  ],
+  "doctor13": [
+    {
+      "name": "장영실",
+      "department": "외상외과",
+      "isclinic": false
+    }
+  ]
+}
