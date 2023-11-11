@@ -126,81 +126,16 @@
   position: relative;
   top: 50px;
 }
-.total_current_emrBed_num,
-.total_current_surgery_num,
-.total_current_hospBed_num {
+.total_current_num {
   font-weight: 600;
   display: inline-block;
   font-size: var(--font-size-80xl);
   position: relative;
   top: 50px;
 }
-.total_current_emrBed_num {
-  color: var(--color-darkorange);
-}
-.total_current_hospBed_num {
-  color: var(--color-limegreen-100);
-}
-.total_current_surgery_num {
-  color: var(--color-pink);
-}
 .notification {
   color: var(--color-dimgray);
   margin-top: 25px;
   position: relative;
   left: 217px;
-}
-.emr_pati_stack {
-  position: relative;
-  right: 0px;
-  width: 450px;
-}
-.emr_pati_stack_frame {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-.emr_pati_stack_frame_top {
-  display: flex;
-  width: 450px;
-  flex-direction: row;
-}
-.frame_timeline {
-  width: 60px;
-  height: 34px;
-  background-color: var(--color-silver-100);
-}
-.frame_nor_emi_pati,
-.frame_spe_emi_pati {
-  width: 195px;
-  height: 34px;
-  background-color: var(--color-gainsboro);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  line-height: 18px;
-  font-weight: 600;
-}
-.emr_pati_stack_frame_bottom {
-  height: 800px;
-  background-color: var(--color-whitesmoke-100);
-}
-.eps_timeline {
-  display: flex;
-  flex-direction: row;
-  height: 100px;
-}
-.eps_timeline div:first-child {
-  background-color: var(--color-gainsboro);
-  width: 60px;
-  display: flex;
-  line-height: 18px;
-  font-weight: 600;
-  justify-content: center;
-  align-items: center;
-}
-.eps_timeline div:nth-child(2),
-.eps_timeline div:nth-child(3) {
-  width: 195px;
-  border: 0.5px solid var(--color-gainsboro);
 }

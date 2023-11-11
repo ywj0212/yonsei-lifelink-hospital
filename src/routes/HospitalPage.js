@@ -3,24 +3,11 @@ import style1 from "./Hospital.module.css";
 import HospitalCard from "../components/HospitalCard.js";
 import EmrgPatientStack from "../components/EmrgPatientStack";
 import { useState } from "react";
-import { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
 const HospitalPage = () => {
   const [name, setName] = useState("");
-  const [loading, setLoading] = useState(true);
-  useEffect(() => {
-    const requestOptions = {
-      method: "GET",
-      redirect: "follow",
-    };
-
-    fetch("https://lifelink-api.mirix.kr/web/myinfo/0/", requestOptions)
-      .then((response) => response.json())
-      .then((result) => console.log(result))
-      .catch((error) => console.log("error".error));
-  }, []);
 
   const onNameChange = (event) => {
     console.log(event.target.value);
