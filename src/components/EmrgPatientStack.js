@@ -24,7 +24,6 @@ export default function EmrgPatientStack() {
       method: "GET",
       redirect: "follow",
     };
-
     fetch("https://lifelink-api.mirix.kr/web/getinfo/0/", requestOptions)
       .then((response) => response.json())
       .then((result) => {
@@ -44,6 +43,29 @@ export default function EmrgPatientStack() {
         setPatientsOver30minSpecial(result.patients.over30min.special);
       })
       .catch((error) => console.log("error".error));
+    let timer = setInterval(() => {
+      fetch("https://lifelink-api.mirix.kr/web/getinfo/0/", requestOptions)
+        .then((response) => response.json())
+        .then((result) => {
+          setPatients5minNormal(result.patients.under5min.normal);
+          setPatients10minNormal(result.patients.under10min.normal);
+          setPatients15minNormal(result.patients.under15min.normal);
+          setPatients20minNormal(result.patients.under20min.normal);
+          setPatients25minNormal(result.patients.under25min.normal);
+          setPatients30minNormal(result.patients.under30min.normal);
+          setPatientsOver30minNormal(result.patients.over30min.normal);
+          setPatients5minSpecial(result.patients.under5min.special);
+          setPatients10minSpecial(result.patients.under10min.special);
+          setPatients15minSpecial(result.patients.under15min.special);
+          setPatients20minSpecial(result.patients.under20min.special);
+          setPatients25minSpecial(result.patients.under25min.special);
+          setPatients30minSpecial(result.patients.under30min.special);
+          setPatientsOver30minSpecial(result.patients.over30min.special);
+        })
+        .catch((error) => console.log("error".error));
+    }, 5000);
+
+    return () => clearInterval(timer);
   }, []);
   return (
     <div className={styles.emr_pati_stack}>

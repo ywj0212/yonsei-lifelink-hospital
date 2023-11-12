@@ -2,17 +2,56 @@ import { Link } from "react-router-dom";
 import style1 from "./Hospital.module.css";
 import HospitalCard from "../components/HospitalCard.js";
 import EmrgPatientStack from "../components/EmrgPatientStack";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
 const HospitalPage = () => {
-  const [name, setName] = useState("");
+  const [hospitalName, setHospitalName] = useState("");
+  const [filteredData, setFilteredData] = useState([]);
+  const [hospitalInfo, setHospitalInfo] = useState([]);
 
-  const onNameChange = (event) => {
-    console.log(event.target.value);
-    setName(event.target.value);
+  const onHospitalNameChange = (event) => {
+    setHospitalName(event.target.value);
+    filterHospitals(event.target.value);
   };
+
+  const onButtonClick = () => {
+    setHospitalName(hospitalName);
+    filterHospitals(hospitalName);
+  };
+  const filterHospitals = (searchTerm) => {
+    const lowerCaseSearchTerm = searchTerm.toLowerCase().trim();
+
+    const filteredHospitals = hospitalInfo.filter((hospital) =>
+      hospital["name"].toLowerCase().includes(lowerCaseSearchTerm)
+    );
+
+    setFilteredData(filteredHospitals);
+  };
+
+  useEffect(() => {
+    const requestOptions = {
+      method: "GET",
+      redirect: "follow",
+    };
+    fetch("https://lifelink-api.mirix.kr/web/getinfo/0/", requestOptions)
+      .then((response) => response.json())
+      .then((result) => {
+        setHospitalInfo(result.hospitals);
+      })
+      .catch((error) => console.log("error".error));
+    let timer = setInterval(() => {
+      fetch("https://lifelink-api.mirix.kr/web/getinfo/0/", requestOptions)
+        .then((response) => response.json())
+        .then((result) => {
+          setHospitalInfo(result.hospitals);
+        })
+        .catch((error) => console.log("error".error));
+    }, 5000);
+
+    return () => clearInterval(timer);
+  }, []);
   return (
     <div className={style1.hospitalpage}>
       <div className={style1.topbar}>
@@ -32,15 +71,19 @@ const HospitalPage = () => {
       <div className={style1.body}>
         <div className={style1.hospital_list}>
           <div className={style1.hospital_list_scrollview}>
-            <HospitalCard
-              hosp_name={"민형 병원"}
-              density={4}
-              hospBed_current={37}
-              hospBed_total={45}
-              emrgBed_current={50}
-              emrgBed_total={60}
-              trans_pati={4}
-            />
+            {filteredData.map((item, index) => (
+              <HospitalCard
+                key={index}
+                hosp_name={item.name}
+                hosp_type={item.type}
+                density={item.currentCongestion}
+                hospBed_current={item.icuBedOccupied}
+                hospBed_total={item.icuBedExists}
+                emrgBed_current={item.emBedOccupied}
+                emrgBed_total={item.emBedExists}
+                trans_pati={item.trasferringPatient}
+              />
+            ))}
           </div>
           <div className={style1.hospital_list_search_input}>
             <div className={style1.hospital_list_search_inputgroup}>
@@ -52,8 +95,8 @@ const HospitalPage = () => {
               <div className={style1.hospital_list_search_inputframe}>
                 <input
                   className={style1.hospital_list_search_inputbox}
-                  value={name}
-                  onChange={onNameChange}
+                  value={hospitalName}
+                  onChange={onHospitalNameChange}
                   required
                   placeholder="이름을 입력해주세요"
                   id="name"
@@ -61,7 +104,12 @@ const HospitalPage = () => {
                 ></input>
               </div>
             </div>
-            <div className={style1.hospital_list_search_button}>검색</div>
+            <div
+              className={style1.hospital_list_search_button}
+              onClick={onButtonClick}
+            >
+              검색
+            </div>
           </div>
         </div>
         <EmrgPatientStack />

@@ -26,7 +26,6 @@ const TotalPage = () => {
       method: "GET",
       redirect: "follow",
     };
-
     fetch("https://lifelink-api.mirix.kr/web/myinfo/0/", requestOptions)
       .then((response) => response.json())
       .then((result) => {
@@ -40,6 +39,23 @@ const TotalPage = () => {
         ]);
       })
       .catch((error) => console.log("error".error));
+    let timer = setInterval(() => {
+      fetch("https://lifelink-api.mirix.kr/web/myinfo/0/", requestOptions)
+        .then((response) => response.json())
+        .then((result) => {
+          setSurgeryRoom(result.opBedRemaining);
+          setEmrBed(result.emBedRemaining);
+          setHospBed(result.icuBedRemaining);
+          setCongestion([
+            parseInt(result.emBedCongestion),
+            parseInt(result.icuBedCongestion),
+            parseInt(result.opBedCongestion),
+          ]);
+        })
+        .catch((error) => console.log("error".error));
+    }, 5000);
+
+    return () => clearInterval(timer);
   }, []);
 
   return (

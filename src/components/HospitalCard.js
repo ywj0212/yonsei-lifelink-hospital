@@ -3,13 +3,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone, faLocationDot } from "@fortawesome/free-solid-svg-icons";
 
 export default function HospitalCard({
-  hosp_name = "세브란스",
+  hosp_name,
+  hosp_type,
   density,
-  hospBed_current = 37,
-  hospBed_total = 45,
-  emrgBed_current = 40,
-  emrgBed_total = 40,
-  trans_pati = 3,
+  hospBed_current,
+  hospBed_total,
+  emrgBed_current,
+  emrgBed_total,
+  trans_pati,
 }) {
   return (
     <div className={styles.hospital_list_card}>
@@ -19,7 +20,7 @@ export default function HospitalCard({
             {hosp_name}
           </div>
           <div className={styles.hospital_list_card_top_title_type}>
-            권역응급의료센터
+            {hosp_type}
           </div>
         </div>
         <div className={styles.hospital_list_card_top_icons}>
