@@ -39,7 +39,7 @@
   font-size: var(--font-size-sm);
   font-family: var(--font-roboto);
   position: absolute;
-  right: 250px;
+  right: 360px;
   top: 27px;
 }
 .logo_icon {
@@ -62,7 +62,7 @@
 }
 .topbar_hospital {
   position: absolute;
-  right: 140px;
+  right: 195px;
   top: 37.5px;
 }
 .topbar_doctor {
