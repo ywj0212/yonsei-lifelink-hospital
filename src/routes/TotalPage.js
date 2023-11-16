@@ -8,7 +8,7 @@ const TotalPage = () => {
   const [emrBed, setEmrBed] = useState(0);
   const [hospBed, setHospBed] = useState(0);
   const [congestion, setCongestion] = useState([]);
-  const [hospitalName, setHospialName] = useState("세브란스 권역응급센터");
+  const [hospitalName, setHospialName] = useState("의료법인나사렛의료재단나사렛국제병원");
   const getClassNameBasedOnValue = (value) => {
     if (value === 0) {
       return style1.colorLimegreen; // Replace with your actual class name
