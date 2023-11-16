@@ -77,223 +77,223 @@ export default function EmrgPatientStack() {
       <div className={styles.emr_pati_stack_frame_bottom}>
         <div className={`${styles.eps_lessThanFive} ${styles.eps_timeline}`}>
           <div className={styles.eps_timeline_title}>5분 미만</div>
-          {patients5minNormal.map(
-            (item) =>
-              patients5minNormal &&
-              patients5minNormal.length > 0 && (
-                <div className={styles.eps_normal}>
-                  <NormalPatientCard
-                    ktasNum={item.preKTAS}
-                    name={item.name}
-                    sexType={item.sex}
-                    age={item.age}
-                  />
-                </div>
-              )
-          )}
-          {patients5minSpecial.map(
-            (item) =>
-              patients5minSpecial &&
-              patients5minSpecial.length > 0 && (
-                <div className={styles.eps_special}>
-                  <SpecialPatientCard
-                    ktasNum={item.preKTAS}
-                    name={item.name}
-                    sexType={item.sex}
-                    age={item.age}
-                  />
-                </div>
-              )
-          )}
+          <div className={styles.eps_normal}>
+            {patients5minNormal.map(
+              (item) =>
+                patients5minNormal &&
+                patients5minNormal.length > 0 && (
+                    <NormalPatientCard
+                      ktasNum={item.preKTAS}
+                      name={item.name}
+                      sexType={item.sex}
+                      age={item.age}
+                    />
+                    )
+              )}
+          </div>
+          <div className={styles.eps_special}>
+            {patients5minSpecial.map(
+              (item) =>
+                patients5minSpecial &&
+                patients5minSpecial.length > 0 && (
+                    <SpecialPatientCard
+                      ktasNum={item.preKTAS}
+                      name={item.name}
+                      sexType={item.sex}
+                      age={item.age}
+                    />
+                    )
+                    )}
+          </div>
         </div>
 
         <div className={`${styles.eps_lessThanTen} ${styles.eps_timeline}`}>
           <div className={styles.eps_timeline_title}>10분 미만</div>
+          <div className={styles.eps_normal}>
           {patients10minNormal.map(
             (item) =>
               patients10minNormal &&
               patients10minNormal.length > 0 && (
-                <div className={styles.eps_normal}>
                   <NormalPatientCard
                     ktasNum={item.preKTAS}
                     name={item.name}
                     sexType={item.sex}
                     age={item.age}
                   />
-                </div>
-              )
-          )}
+                  )
+                  )}
+                  </div>
+                  <div className={styles.eps_special}>
           {patients10minSpecial.map(
             (item) =>
               patients10minSpecial &&
               patients10minSpecial.length > 0 && (
-                <div className={styles.eps_special}>
                   <SpecialPatientCard
                     ktasNum={item.preKTAS}
                     name={item.name}
                     sexType={item.sex}
                     age={item.age}
                   />
-                </div>
-              )
-          )}
+                  )
+                  )}
+                  </div>
         </div>
         <div className={`${styles.eps_lessThanFifteen} ${styles.eps_timeline}`}>
           <div className={styles.eps_timeline_title}>15분 미만</div>
+          <div className={styles.eps_normal}>
           {patients15minNormal.map(
             (item) =>
               patients15minNormal &&
               patients15minNormal.length > 0 && (
-                <div className={styles.eps_normal}>
                   <NormalPatientCard
                     ktasNum={item.preKTAS}
                     name={item.name}
                     sexType={item.sex}
                     age={item.age}
                   />
-                </div>
-              )
-          )}
+                  )
+                  )}
+                  </div>
+                  <div className={styles.eps_special}>
           {patients15minSpecial.map(
             (item) =>
               patients15minSpecial &&
               patients15minSpecial.length > 0 && (
-                <div className={styles.eps_special}>
                   <SpecialPatientCard
                     ktasNum={item.preKTAS}
                     name={item.name}
                     sexType={item.sex}
                     age={item.age}
                   />
-                </div>
-              )
-          )}
+                  )
+                  )}
+                  </div>
         </div>
         <div className={`${styles.eps_lessThanTwenty} ${styles.eps_timeline}`}>
           <div className={styles.eps_timeline_title}>20분 미만</div>
+          <div className={styles.eps_normal}>
           {patients20minNormal.map(
             (item) =>
               patients20minNormal &&
               patients20minNormal.length > 0 && (
-                <div className={styles.eps_normal}>
                   <NormalPatientCard
                     ktasNum={item.preKTAS}
                     name={item.name}
                     sexType={item.sex}
                     age={item.age}
                   />
-                </div>
-              )
-          )}
+                  )
+                  )}
+                  </div>
+                  <div className={styles.eps_special}>
           {patients20minSpecial.map(
             (item) =>
               patients20minSpecial &&
               patients20minSpecial.length > 0 && (
-                <div className={styles.eps_special}>
                   <SpecialPatientCard
                     ktasNum={item.preKTAS}
                     name={item.name}
                     sexType={item.sex}
                     age={item.age}
                   />
-                </div>
-              )
-          )}
+                  )
+                  )}
+                  </div>
         </div>
         <div
           className={`${styles.eps_lessThanTwenfive} ${styles.eps_timeline}`}
         >
           <div className={styles.eps_timeline_title}>25분 미만</div>
+          <div className={styles.eps_normal}>
           {patients25minNormal.map(
             (item) =>
               patients25minNormal &&
               patients25minNormal.length > 0 && (
-                <div className={styles.eps_normal}>
                   <NormalPatientCard
                     ktasNum={item.preKTAS}
                     name={item.name}
                     sexType={item.sex}
                     age={item.age}
                   />
-                </div>
-              )
-          )}
+                  )
+                  )}
+                  </div>
+                  <div className={styles.eps_special}>
           {patients25minSpecial.map(
             (item) =>
               patients25minSpecial &&
               patients25minSpecial.length > 0 && (
-                <div className={styles.eps_special}>
                   <SpecialPatientCard
                     ktasNum={item.preKTAS}
                     name={item.name}
                     sexType={item.sex}
                     age={item.age}
                   />
-                </div>
-              )
-          )}
+                  )
+                  )}
+                  </div>
         </div>
         <div className={`${styles.eps_lessThanThirty} ${styles.eps_timeline}`}>
           <div className={styles.eps_timeline_title}>30분 미만</div>
+          <div className={styles.eps_normal}>
           {patients30minNormal.map(
             (item) =>
               patients30minNormal &&
               patients30minNormal.length > 0 && (
-                <div className={styles.eps_normal}>
                   <NormalPatientCard
                     ktasNum={item.preKTAS}
                     name={item.name}
                     sexType={item.sex}
                     age={item.age}
                   />
-                </div>
-              )
-          )}
+                  )
+                  )}
+                  </div>
+                  <div className={styles.eps_special}>
           {patients30minSpecial.map(
             (item) =>
               patients30minSpecial &&
               patients30minSpecial.length > 0 && (
-                <div className={styles.eps_special}>
                   <SpecialPatientCard
                     ktasNum={item.preKTAS}
                     name={item.name}
                     sexType={item.sex}
                     age={item.age}
                   />
-                </div>
-              )
-          )}
+                  )
+                  )}
+                  </div>
         </div>
         <div className={`${styles.eps_moreThanThirty} ${styles.eps_timeline}`}>
           <div className={styles.eps_timeline_title}>30분 이상</div>
+          <div className={styles.eps_normal}>
           {patientsOver30minNormal.map(
             (item) =>
               patientsOver30minNormal &&
               patientsOver30minNormal.length > 0 && (
-                <div className={styles.eps_normal}>
                   <NormalPatientCard
                     ktasNum={item.preKTAS}
                     name={item.name}
                     sexType={item.sex}
                     age={item.age}
                   />
-                </div>
-              )
-          )}
+                  )
+                  )}
+                  </div>
+                  <div className={styles.eps_special}>
           {patientsOver30minSpecial.map(
             (item) =>
               patientsOver30minSpecial &&
               patientsOver30minSpecial.length > 0 && (
-                <div className={styles.eps_special}>
                   <SpecialPatientCard
                     ktasNum={item.preKTAS}
                     name={item.name}
                     sexType={item.sex}
                     age={item.age}
                   />
-                </div>
-              )
-          )}
+                  )
+                  )}
+                  </div>
         </div>
       </div>
     </div>

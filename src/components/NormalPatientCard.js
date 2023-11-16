@@ -17,7 +17,7 @@ export default function NormalPatientCard({ ktasNum, name, sexType, age }) {
       </div>
       <div className={styles.patient_card_back}>
         <div className={styles.card_frame}>
-          <div className={styles[`ktas${ktasNum}`]}>KTAS {ktasNum}</div>
+          <div className={styles[`ktas${ktasNum}`]}>KTAS {ktasNum}</div>  
         </div>
       </div>
     </div>
